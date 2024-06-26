@@ -44,8 +44,41 @@
 #corpo .zurich .texto-zurich{ font-size:1.8vw; width:88%; margin:4% auto;}
 #corpo .zurich .condicoes{ font-size:1.8vw; font-weight:400; }
 /* VIDEO */
-#corpo .video::before{ padding: 0; padding-top: 76%; margin-bottom:10%;}
-#corpo .video .video-box{ z-index:10;}
+#corpo .video{margin: 8% auto -3%; }
+#corpo .video::before{ padding: 0; padding-top: 45.0625%;}
+ .flex_wrapper {
+        /* This wrapper controls alignment as needed  */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center;
+    }
+
+    .flex_wrapper .size_wrapper {
+        width: 80%; /* Controls size of the video based on size of the parent */
+        margin-bottom: -15%; /* Or any other value as needed */
+    }
+
+    .flex_wrapper .size_wrapper .video_wrapper {
+        position: relative;
+        margin: 0 auto;
+        height: 0;
+        width: 31%;
+        padding-bottom: 56.25%; /* 16:9 */
+    }
+    
+    .flex_wrapper .size_wrapper .video_wrapper .spot_video {
+        margin: 0 auto 50px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+    }
 /* SEÇÃO INVESTIMENTO */
 #corpo .investimento-tabela::before { padding-top: 215.0625%; }#corpo .investimento-tabela img{ width:75%;}
 #corpo .investimento-link::before { padding-top: 63.0625%; }
@@ -101,8 +134,16 @@
 #corpo .zurich .texto-zurich{ width:82%; font-size:3.2vw; line-height: 4.9vw}
 #corpo .zurich .condicoes{ font-size:3.2vw;}
 /* SEÇÃO VIDEO */
-#corpo .video:before { padding-top: 88.0625%;}
-#corpo .video{ margin-bottom: -6%;}
+#corpo .video{ margin: 14% auto 4%;;}
+
+#corpo .video::before {
+    padding: 0;
+    padding-top: 79.0625%;
+}
+.flex_wrapper .size_wrapper .video_wrapper {
+        width: 54%;
+        padding-bottom: 98%;
+    }
 /* SOBRE A ARTISTA */
 #corpo .sobre-artista::before { padding-top: 113.0625%;}
 #corpo .sobre-artista picture { width: 100%;}
@@ -171,13 +212,18 @@
     <h3 class="condicoes">CONFIRA AS CONDIÇÕES GERAIS</h3>
     </div>
 
-    <!-- <div class="wrapper-aspect-ratio video">
-        <picture class="inner">
-            <source media="(max-width: 1100px)" srcset="files/imagem-video-mobile.png">
-            <img src="files/imagem_video.png" class="video-box" alt="">
-        </picture>
-       
-    </div>    -->
+ <div class="wrapper-aspect-ratio video">
+    <div class="flex_wrapper inner">
+        <div class="size_wrapper">
+            <div class="video_wrapper">
+                <iframe class="spot_video" src="https://www.youtube.com/embed/22K9-hFcWLk" frameborder="0"
+                    allowfullscreen></iframe>
+
+            </div>
+            <!-- If more than one video, duplicate this div (class="size-wrapper") -->
+        </div>
+    </div>
+</div>
     
         <div class="wrapper-aspect-ratio sobre-artista">
             <picture class="inner">
