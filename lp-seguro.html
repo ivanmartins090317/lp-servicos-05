@@ -1,0 +1,451 @@
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  
+  <!-- LIB CAROUSEL -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+  <!-- METRICAS FAST SHOP -->
+  <link rel="stylesheet" href="https://fastshopwr-a.akamaihd.net/spot/metrics/metrics.css">
+  
+  <style>
+   #corpo {display: block;position: relative;margin: 0 auto; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: 'Open Sans', sans-serif; color: #000000;overflow: hidden; background:#FFFFFF; text-align: center;}
+   /* CARDO ROOT-DEFAULT */
+ .card{width: 23%;height:15vw;background: #D9D9D9; padding: 2%; border-radius:20px; margin-bottom: 2%;}
+ .card-mobile{width: 84%;height:54vw;background: #D9D9D9; padding:5%; border-radius:20px; margin-bottom: 2%;}
+  /* TEXTO TOPO */
+  #corpo .texto-topo{ text-align: center;}
+  #corpo .texto-topo img{ width:17%; margin:4px auto 0;}
+  #corpo .texto-topo P { font-size:2.1vw; width:38%; margin:2% auto 4%;}
+  #corpo .texto-topo h2.sub-titulo{ font-size:2.5vw; font-weight:700; margin-top:7%;}
+  #corpo .texto-topo P.bold { font-size:1.8vw; font-weight:600;width: 80%; margin: 3% auto;} 
+  /* BANNER */
+  #corpo .banner_artista::before{ padding: 0; padding-top: 50.0625%;}
+  #corpo .banner_artista{position: relative;display: block;width: 100%; margin: 0 auto;}
+  #corpo .banner_artista picture{display: block;width: 100%;}
+  #corpo .banner_artista picture img{position: relative;display: block;width: 97%; margin: 0 auto}
+  #corpo .banner_artista .texto-artista p{ font-size:1.2vw; margin: 3% auto 0%;}
+  #corpo .banner_artista .texto-artista h2{ font-size:1.6vw;margin-top: 0; margin-bottom: 3%;}
+  #corpo .banner_artista .texto-artista hr{ width:47%; margin: 3% auto;}
+ /* SEÇÃO BENEFICOS */
+#corpo .beneficios-card-container::before {padding: 0;padding-top: 46.0625%;}
+#corpo .beneficios-card-container{margin-bottom: 2%;}
+#corpo .beneficios .texto-beneficios-topo{width: 66%; margin: 0 auto;}
+#corpo .beneficios .texto-beneficios-topo p{font-size: 1.6vw;margin: 0 auto 2%;}
+#corpo .beneficios h2 {font-size: 1.8vw;margin: 5% 0 3%;font-weight: 400;} 
+#corpo .beneficios .orientacao {font-size: 0.9vw;width: 59%;margin: 4% auto 0%;}
+
+#corpo .beneficios-card-container .beneficios-card-desk{ width: 89%; display: flex; flex-wrap: wrap; justify-content: center; gap: 2%; margin: 0 auto;}
+#corpo .beneficios-card-container .beneficios-card-desk .beneficios-card{margin: 0 3% 2% 3%;}
+#corpo .beneficios-card-container .beneficios-card-desk .beneficios-card h2{width: 85%;margin: 0 auto;font-size:1.3vw; font-weight:bold;}
+#corpo .beneficios-card-container .beneficios-card-desk .beneficios-card p{width: 100%; font-size:1vw;}
+  /* FAQ */
+  #corpo .zurich h2{ font-size:2.8vw; font-weight:400;}
+  #corpo .zurich h3{ font-size:2vw;}
+  #corpo .zurich .texto-servico{ font-size: 1.8vw; width:64%; margin: 0 auto 3%;}
+  #corpo .zurich .texto-cobertura{ font-size: 1.8vw; width:79%; margin: 0 auto;}
+  #corpo .zurich img{ width:11vw; margin-top:8%;}
+  #corpo .zurich .texto-zurich{ font-size:1.8vw; width:88%; margin:4% auto 2%;}
+  #corpo .zurich .condicoes{ font-size:1.4vw; font-weight:400; margin-bottom: 4%;}
+  /* VIDEO */
+  #corpo .texto-video h2{font-size:1.8vw; font-weight:400;}
+  #corpo .video::before{ padding: 0; padding-top: 45.0625%;}
+   .flex_wrapper {        /* This wrapper controls alignment as needed  */        width: 100%;        height: 100%;        display: flex;        flex-direction: column;        justify-content: flex-start;         align-items: center;    }
+  
+  .flex_wrapper .size_wrapper {        width: 80%; /* Controls size of the video based on size of the parent */        margin-bottom: -15%; /* Or any other value as needed */    }
+  
+  .flex_wrapper .size_wrapper .video_wrapper {        position: relative;        margin: 0 auto;        height: 0;        width: 31%;        padding-bottom: 56.25%; /* 16:9 */    }
+      
+  .flex_wrapper .size_wrapper .video_wrapper .spot_video {        margin: 0 auto 50px;        width: 100%;        position: absolute;        top: 0;        left: 0;        width: 100%;        height: 100%;        border-radius: 16px;    }
+  /* SEÇÃO INVESTIMENTO */
+  #corpo .investimento-tabela::before { padding-top: 215.0625%; }#corpo .investimento-tabela img{ width:75%;}
+  #corpo .investimento-link::before { padding-top: 63.0625%; }
+  #corpo .investimento picture{ position: absolute;}
+  #corpo .investimento-link a{ position: absolute; width: 20%; height:5%; background-color: transparent; bottom: 11%; left: 38%;}
+  /* SOBRE A ARTISTA */
+  #corpo .sobre-artista::before{ padding: 0; padding-top: 63.0625%;}  
+  #corpo .sobre-artista picture{ width:94%; margin:0 auto; }
+  #corpo .sobre-artista h2{ font-size: 2.3vw; margin: 10% auto 6%; font-weight:400;}
+  #corpo .sobre-artista a{ position: absolute; width: 17%; height:7%; background-color: transparent; bottom: 25%; left: 50%;}
+   /* CARROUSSEL SEVIÇOS */
+ #corpo .carroussel-servicos::before{ padding: 0; padding-top: 65.0625%;}
+ #corpo .carroussel-servicos{ margin-bottom:10%; position:relative;}
+ #corpo .carroussel-servicos .texto-carrossel{ margin-top:6%;}
+ #corpo .carroussel-servicos .texto-carrossel img{ width:26vw; margin:3.5%}
+ #corpo .carroussel-servicos .texto-carrossel p{ font-size: 1.6vw; margin: -2.5vw 0 8%; padding:0;}
+ #corpo .todos-servicos{width:100%;}
+ #corpo .todos-servicos .grupo-servicos picture { position: relative;}
+ #corpo .todos-servicos .grupo-servicos{ display: flex; width: 95%; margin: 0 auto; justify-content: space-between; gap:2%;}
+ #corpo .todos-servicos .grupo-servicos picture a{ position: absolute; width: 36%; height: 9%; background-color: transparent; bottom: 0%; left: 0%;}
+
+ /* CARROUSSEL SEVIÇOS FOOTER*/
+#corpo .carroussel-servicos::before { padding: 0; padding-top: 46.0625%;}
+ #corpo .carroussel-servicos .owl-carousel .owl-stage-outer{width:100% ;margin-left: 1.8%;}
+ #corpo .carroussel-servicos { margin-bottom: 5%; position: relative;}
+ #corpo .carroussel-servicos .owl-carousel { width: 70%; margin: 0 auto;}
+ #corpo .carroussel-servicos .texto-carrossel { margin-top: 6%; text-align: center;}
+ #corpo .carroussel-servicos .texto-carrossel img { width: 19%; margin: 1%;}
+ #corpo .carroussel-servicos .texto-carrossel p { font-size: 1.6vw; margin: 0 auto 4%; padding: 0;}
+ #corpo .carroussel-servicos picture { display: inline-block; width: 90%; margin: 0 auto;}
+ #corpo .carroussel-servicos picture a { position: absolute; width: 36%; height: 7%; background-color: transparent; bottom: 0%; left: 3%;}
+ /* NAVEGAÇÃO DO CARROUSSEL FOOTER*/
+ #corpo .carroussel-servicos .owl-carousel.owl-drag .owl-item { width: 300px;}
+ #corpo .carroussel-servicos .owl-nav { width: 100%; position: absolute; top: 43%; display: flex; align-items: center; justify-content: center;}
+ #corpo .carroussel-servicos .owl-nav .owl-next,
+ #corpo .carroussel-servicos .owl-nav .owl-prev { width: 50px; height: 50px; border-radius: 50%; background: #D9D9D9; border: 1px solid #33333314; filter:opacity(0.5)}
+ #corpo .carroussel-servicos .owl-nav .owl-prev { position: absolute; left: -0.8vw;}
+ #corpo .carroussel-servicos .owl-nav .owl-next { position: absolute; right: -2.8vw;}
+
+  
+  
+  /* ----Responsividade media query---- */
+  @media screen and (min-width: 1600px){
+    #corpo .beneficios .texto-beneficios-topo {width: 64vw;}
+    #corpo .texto-video h2 {font-size: 29px;}
+
+  }
+  @media screen and (max-width: 1100px) {
+  /* LOGO FASTSHOP TOPO */
+  #corpo .texto-topo img{ width:34%;}
+  /* TEXTO TOPO */
+  #corpo .texto-topo P{ font-size:2vw; }
+  #corpo .texto-topo h2.sub-titulo{ font-size:4vw; width: 90%; margin: 7% auto 6%; }
+  #corpo .texto-topo P.bold{ font-size:2.8vw; width:90%; }
+  /* BANNER TOPO */
+  #corpo .banner_artista::before { padding-top: 82.0625%;}
+  #corpo .banner_artista .texto-artista p,
+  #corpo .banner_artista .texto-artista h2{ font-size:3vw;}
+  #corpo .banner_artista .texto-artista hr { width: 58%;}
+ /* SEÇÃO BENEFICOS CARROSSEL*/
+#corpo .beneficios .texto-beneficios-topo{width: 95%;}
+#corpo .beneficios .texto-beneficios-topo p {font-size:3.2vw;margin:0 auto 2%;}
+#corpo .beneficios h2{font-size:3.2vw;}
+#corpo .beneficios-card .categoria-Mobile1 picture {display:block;width: 90%; margin-left: 5%;}
+#corpo .beneficios-card .categoria-Mobile1 .owl-carousel{width: 46%; margin:0 auto;}
+#corpo .beneficios .categoria-Mobile1 .owl-carousel .owl-stage-outer {margin-left: 3%;}
+
+#corpo .beneficios .categoria-Mobile1 .beneficios-card h2{width: 59%;margin: 0 auto;font-size:4vw; font-weight:bold;}
+#corpo .beneficios .categoria-Mobile1 .beneficios-card p{width: 100%; font-size:4vw; margin-top: 7%;}
+#corpo .beneficios .orientacao {font-size: 2.3vw;}
+/* NAVEGAÇÃO DO CARROUSSEL BENEFICIOS E BENEFICIOS SUPORTE*/
+#corpo .categoria-Mobile1 .owl-carousel.owl-drag .owl-item { width:300px; }
+#corpo .categoria-Mobile1 .owl-nav{ width:100%; position: absolute; top:98.3%; display:flex; align-items:center; justify-content:center;}
+#corpo .categoria-Mobile1 .owl-nav .owl-next,
+#corpo .categoria-Mobile1 .owl-nav .owl-prev{ width:50px; height:50px; border-radius:50%; }
+#corpo .categoria-Mobile1 .owl-nav .owl-prev{ position:absolute; left:-15.5vw;}
+#corpo .categoria-Mobile1 .owl-nav .owl-next{ position:absolute;right:-15.5vw ;}
+/* DOTS NAVEGAÇÃO BENEFICIOS E BENEFICIOS SUPORTE*/
+.fast_rotativo_header .owl-dots { display: block; position: relative; margin: 2% auto 10%; width: 45%; text-align: center; }
+.fast_rotativo_header .owl-dots .owl-dot { display: inline-block; position: relative; outline: none;}
+.fast_rotativo_header .owl-dots .owl-dot span { display: block; outline: 1px solid #aaaaaa; width: 8px; height: 8px; margin: 0 5px; border-radius: 250px; }
+.fast_rotativo_header .owl-dots .owl-dot:hover span, .fast_rotativo_header .owl-dots .owl-dot.active span { background-color: #8f8e8e; }
+/* NAVEGAÇÃO DO CARROUSSEL BENEFICIOS E BENEFICIOS SUPORTE*/
+#corpo .categoria-Mobile1 .owl-carousel.owl-drag .owl-item { width: 300px; }
+ #corpo .categoria-Mobile1 .owl-nav { width: 35%; position: absolute; top: 99%; left:32%; display: flex; align-items: center; justify-content: center; gap:23%}
+ #corpo .categoria-Mobile1 .owl-nav .owl-next,
+ #corpo .categoria-Mobile1 .owl-nav .owl-prev { width: 25px; height: 25px; border-radius: 50%; background: #33333378;filter: opacity(0.5);}
+ 
+  /* zurich */
+  #corpo .zurich h2 { font-size:3.3vw;}
+  #corpo .zurich h3 { font-size: 3.3vw;}
+  #corpo .zurich .texto-servico,
+  #corpo .zurich .texto-cobertura{ font-size:3.2vw; line-height: 4.9vw}
+  #corpo .zurich .texto-servico{ width:77%;}
+  #corpo .zurich .texto-cobertura{ width:89%;}
+  #corpo .zurich img{ width: 17vw;}
+  #corpo .zurich .texto-zurich{ width:90%; font-size:3.2vw; line-height: 4.9vw}
+  #corpo .zurich .condicoes{ font-size:2.5vw;}
+  /* SEÇÃO VIDEO */
+  #corpo .texto-video h2{font-size:3.2vw;}
+
+  #corpo .video::before {    padding: 0;    padding-top: 79.0625%;}
+  .flex_wrapper .size_wrapper .video_wrapper {        width: 54%;        padding-bottom: 98%;    }
+  /* SOBRE A ARTISTA */
+  #corpo .sobre-artista::before { padding-top: 113.0625%;}
+  #corpo .sobre-artista picture { width: 100%;}
+  #corpo .sobre-artista h2 { font-size: 2.7vw;}
+  #corpo .sobre-artista a {bottom: 24%;}
+
+
+ /* seçao carrossel */
+ #corpo .todos-servicos .grupo-servicos { display: flex; width: 100%; margin: 0 auto; gap: 2%; justify-content: space-between;}
+
+/* seçao carrossel footer*/
+#corpo .carroussel-servicos::before { padding-top: 85.0625%; } #corpo .carroussel-servicos .owl-carousel { width: 85%; margin: 0 auto; }
+#corpo .carroussel-servicos .texto-carrossel img { width: 35%; margin-bottom: 1%; }
+#corpo .carroussel-servicos .texto-carrossel h2 { font-size: 6vw; }
+#corpo .carroussel-servicos .texto-carrossel p { font-size: 3vw; margin: 0 auto 6%; }
+#corpo .carroussel-servicos .owl-nav { top: 39%; }
+#corpo .carroussel-servicos .owl-nav .owl-next,
+#corpo .carroussel-servicos .owl-nav .owl-prev { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  }
+  
+  </style>
+  <!-- INICIO LP -->
+<div id="corpo">
+      <div class="texto-topo">
+          <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/files_lp_05/image-logo-fast-shop.png" alt="" srcset="">
+          <!-- <p>Serviços que cuidam de você em todos os momentos.</p> -->
+          <h2 class="sub-titulo">Cuidar é: <br>
+          Oferecer segurança nos momentos inesperados</h2>
+          <p class="bold">Seguro contra Roubo, Furto Qualificado e Queda Acidental</p>
+      </div>
+      <div class="wrapper-aspect-ratio banner_artista">
+          <picture class="inner">
+              <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/06/files_lp_05/banner_topo_mobile.png">
+              <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/files_lp_05/banner_topo.png" alt="banner artista Marcelo Colmenero">
+          </picture>
+          <div class="texto-artista">
+              <p>Arte por</p>
+              <h2>Marcelo Colmenero</h2>
+              <hr>
+          </div>
+      </div>
+      <!-- SESSÃO BENEFICIOS -->
+    <div class="beneficios">
+        <div class="texto-beneficios-topo">
+        <p class="texto-inicio">Para nós, “cuidado” tem a ver com proporcionar a tranquilidade da proteção, do apoio e do suporte. Caso um dia você ou sua família tenham de lidar com o “cuidado” que se ouve em situações de alerta ou perigo, conte com os seguros da Fast Shop.
+        </p>
+        <p class="texto-complemento">
+            Com os seguros contra Roubo e Furto Qualificado e seguro contra Quebra Acidental, você pode aproveitar com mais leveza seu smartphone, notebook ou câmera onde estiver, sabendo que basta acionar a franquia para consertar ou receber outro produto – por um valor muito menor que a compra de um novo.</p>
+        </div>
+        <h2>Quais são os benefícios?</h2>
+        <div class="beneficios-card-container">
+        
+        <div class="beneficios-card-desk">
+        <!-- CARD-DESK-01 -->
+        <div class="card beneficios-card">
+        <h2>Tranquilidade e segurança </h2>
+        <p>Em parceria com a Zurich, referência em seguros e presente em mais de 210 países, oferecemos todo o cuidado a seus aparelhos: você tem cobertura total e imediata ao sair da loja em caso de Roubo e Furto Qualificado.</p>
+        </div>
+        <!-- CARD-DESK-02 -->
+        <div class="card beneficios-card">
+        <h2>Economia em<br> situações inesperadas</h2>
+        <p>Sabia que o custo de acionar o seguro é bem menor do que comprar um novo aparelho? E, ainda, a Zurich oferece indenização de até 80% do limite máximo indenizável em caso de sinistro.</p>
+        </div>
+        <!-- CARD-DESK-03 -->
+        <div class="card beneficios-card">
+        <h2>Atendimento rápido</h2>
+        <p>Fale com a central ou acesse o site da Zurich para receber ajuda de especialistas durante todo o processo. Você será reembolsado com o valor do produto em sua conta ou com um novo produto*.</p>
+        </div>
+        <!-- CARD-DESK-04 -->
+        <div class="card beneficios-card">
+        <h2>Proteção ainda mais completa</h2>
+        <p>Você tem a opção de adicionar o seguro Quebra Acidental, que protege seu aparelho em casos de queda, danos elétricos, exposição a ambientes úmidos e até se derrubar café.</p>
+        </div>
+        <!-- CARD-DESK-05 -->
+        <div class="card beneficios-card">
+        <h2>Serviço "Leva e Traz"</h2>
+        <p>Seu celular quebrou ou caiu dentro da piscina? Não se preocupe, se coberto pelo Seguro contra Quebra Acidental, a assistência retira o aparelho na sua casa, faz o conserto e depois o devolve com o maior cuidado e funcionando direitinho.</p>
+        </div>
+        <!-- CARD-DESK-06 -->
+        <div class="card beneficios-card">
+        <h2>Parcerias com<br> fabricantes</h2>
+        <p>Fique tranquilo, seus produtos serão consertados com qualidade, com uso de peças originais e em assistências técnicas especializadas.</p>
+        </div>
+        <!-- CARD-DESK-07 -->
+        <div class="card beneficios-card">
+        <h2>Opções de indenização</h2>
+        <p>Caso seu produto seja roubado, furtado ou quebre, você pode ser indenizado com o conserto, um novo produto ou seu dinheiro de volta, a depender da situação e serviço contratado.</p>
+        </div>
+        <!-- CARD-DESK-08 -->
+        <div class="card beneficios-card">
+        <h2>Ampla rede de<br> assistência</h2>
+        <p>A Zurich possui uma rede de 58 lojas de atendimento e reparo em todo o território nacional, cobrindo as principais marcas e regiões.</p>
+        </div>
+        </div> 
+        <!-- modelo mobile -->
+        <div class="categoria-Mobile1">
+        
+        <div id="fast_rotativo_header" class="owl-carousel fast_rotativo_header">
+        <!-- CARD-DESK-01 -->
+        <div class="card-mobile beneficios-card">
+            <h2>Tranquilidade e segurança </h2>
+            <p>Em parceria com a Zurich, referência em seguros e presente em mais de 210 países, oferecemos todo o cuidado a seus aparelhos: você tem cobertura total e imediata ao sair da loja em caso de Roubo e Furto Qualificado.</p>
+            </div>
+            <!-- CARD-DESK-02 -->
+            <div class="card-mobile beneficios-card">
+            <h2>Economia em<br> situações inesperadas</h2>
+            <p>Sabia que o custo de acionar o seguro é bem menor do que comprar um novo aparelho? E, ainda, a Zurich oferece indenização de até 80% do limite máximo indenizável em caso de sinistro.</p>
+            </div>
+            <!-- CARD-DESK-03 -->
+            <div class="card-mobile beneficios-card">
+            <h2>Atendimento rápido</h2>
+            <p>Fale com a central ou acesse o site da Zurich para receber ajuda de especialistas durante todo o processo. Você será reembolsado com o valor do produto em sua conta ou com um novo produto*.</p>
+            </div>
+            <!-- CARD-DESK-04 -->
+            <div class="card-mobile beneficios-card">
+            <h2>Proteção ainda mais completa</h2>
+            <p>Você tem a opção de adicionar o seguro Quebra Acidental, que protege seu aparelho em casos de queda, danos elétricos, exposição a ambientes úmidos e até se derrubar café.</p>
+            </div>
+            <!-- CARD-DESK-05 -->
+            <div class="card-mobile beneficios-card">
+            <h2>Serviço "Leva e Traz"</h2>
+            <p>Seu celular quebrou ou caiu dentro da piscina? Não se preocupe, se coberto pelo Seguro contra Quebra Acidental, a assistência retira o aparelho na sua casa, faz o conserto e depois o devolve com o maior cuidado e funcionando direitinho.</p>
+            </div>
+            <!-- CARD-DESK-06 -->
+            <div class="card-mobile beneficios-card">
+            <h2>Parcerias com<br> fabricantes</h2>
+            <p>Fique tranquilo, seus produtos serão consertados com qualidade, com uso de peças originais e em assistências técnicas especializadas.</p>
+            </div>
+            <!-- CARD-DESK-07 -->
+            <div class="card-mobile beneficios-card">
+            <h2>Opções de indenização</h2>
+            <p>Caso seu produto seja roubado, furtado ou quebre, você pode ser indenizado com o conserto, um novo produto ou seu dinheiro de volta, a depender da situação e serviço contratado.</p>
+            </div>
+            <!-- CARD-DESK-08 -->
+            <div class="card-mobile beneficios-card">
+            <h2>Ampla rede de<br> assistência</h2>
+            <p>A Zurich possui uma rede de 58 lojas de atendimento e reparo em todo o território nacional, cobrindo as principais marcas e regiões.</p>
+            </div>
+        
+        </div>
+        </div>
+    
+    </div>
+        
+        <p class="orientacao">* Sujeito à disponibilidade do produto e dentro do valor pago pelo item coberto.</p>
+        
+    </div>
+     
+    <!-- SEÇÃO PARCERIA COM ZURICH -->
+      <div class="zurich">
+       <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/files_lp_05/image-logo-parceira.png" alt="logo empresa Zurich">
+       <p class="texto-zurich">A Zurich é a parceira da Fast Shop na comercialização de Seguros em todos os pontos de venda. Seguradora com sólida base
+      financeira, apresenta soluções para seus clientes e parceiros na esfera local e global e é líder de Garantia Estendida e
+      Roubo e Furto no Brasil. Com mais de 70 anos de experiência no mercado nacional, fornece uma ampla gama de serviços em
+      soluções de seguros multicanal adquirida em mais de 210 países e territórios. Para mais informações: www.zurich.com.b</p>
+      <h3 class="condicoes">CONFIRA AS CONDIÇÕES GERAIS</h3>
+      </div>
+   <!-- VIDEO -->
+   <div class="texto-video">
+    <h2>Conheça mais sobre o serviço</h2>
+    </div>
+    <div class="wrapper-aspect-ratio video">
+      <div class="flex_wrapper inner">
+          <div class="size_wrapper">
+              <div class="video_wrapper">
+                  <iframe class="spot_video" src="https://www.youtube.com/embed/22K9-hFcWLk" frameborder="0" allowfullscreen=""></iframe>
+  
+              </div>
+              <!-- If more than one video, duplicate this div (class="size-wrapper") -->
+          </div>
+      </div>
+  </div>
+      
+          <div class="wrapper-aspect-ratio sobre-artista">
+              <picture class="inner">
+                  <h2>Sobre o artista</h2>
+                  <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/06/files_lp_05/sobre-artista-mobile.png">
+                  <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/files_lp_05/sobre-artista.png" alt="banner artista Arte por Marcelo Colmenero">
+              </picture>   
+              <a href="https://www.fastshop.com.br/web/a/fast_cuida_colaboracoes"></a>    
+          </div>
+   <!-- CARROSEL TODO OS SERVIÇOS -->
+    <div class="wrapper-aspect-ratio carroussel-servicos">
+        <div class="inner">
+        <div class="texto-carrossel">
+        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/image-logo-fast-shop.png"
+        alt="logo Fast Shop">
+        <p>Descubra todos nossos cuidados</p>
+        </div>
+        
+        <div class="carousel_serviços">
+        <div id="fast_rotativo" class="owl-carousel fast_rotativo">
+        <picture>
+        <img width="100%" height="auto"
+        src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-07/files/servico_01.png"
+        alt="Serviços disponiveis na Fast Shop">
+        <a href="https://site.fastshop.com.br/fast_cuida_instalacao"></a>
+        </picture>
+        <picture>
+        <img width="100%" height="auto"
+        src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_02.png"
+        alt="Serviços disponiveis na Fast Shop">
+        <a href="https://site.fastshop.com.br/casa_inteligente"></a>
+        </picture>
+        <picture>
+        <img width="100%" height="auto"
+        src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_03.png"
+        alt="Serviços disponiveis na Fast Shop">
+        <a href="https://www.fastshop.com.br/web/a/fast_cuida_suporte"></a>
+        </picture>
+        <picture>
+        <img width="100%" height="auto"
+        src="https://conteudoespecial.fastshop.com.br/pages/2024/09/services/2709servicos-appleCare.png"
+        alt="Serviços disponiveis na Fast Shop">
+        <a href="https://site.fastshop.com.br/apple-care"></a>
+        </picture>
+        <!-- <picture>
+        <img width="100%" height="auto"
+        src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/servico_04.png"
+        alt="Serviços disponiveis na Fast Shop">
+        <a href="https://www.fastshop.com.br/web/a/fast_cuida_garantia"></a>
+        </picture> -->
+        <picture>
+        <img width="100%" height="auto"
+        src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_05.png"
+        alt="Serviços disponiveis na Fast Shop">
+        <a href="https://www.fastshop.com.br/web/a/fast_cuida_seguro"></a>
+        </picture>
+        </div>
+        </div>
+        </div> 
+    </div>
+    
+</div>
+
+<script>
+ 
+    var larguraDaTela = window.innerWidth;
+    // Se a largura da tela for menor que 1100px
+    if (larguraDaTela < 1100) {
+    document.querySelectorAll('.categoria-Mobile1').forEach(item => item.style.display = 'block')
+    document.querySelectorAll('.beneficios-card-desk').forEach(item => item.style.display = 'none')
+    document.querySelectorAll('.beneficios-suporte-card-desk').forEach(item => item.style.display = 'none')
+   
+    $('.fast_rotativo_header').owlCarousel({
+    loop: true,
+    smartSpeed: 600,
+    responsiveClass: true,
+    nav: true,
+    dots: true,
+    navText: ['<img src="https://conteudoespecial.fastshop.com.br/pages/2023/12/image/esquerda.png">', '<img src="https://conteudoespecial.fastshop.com.br/pages/2023/12/image/direita.png">'],
+    responsive: { 0: { items: 1 } },
+    margin: 0,
+    dots: true,
+    autoplay: false,
+    autoplayTimeout: 0,
+    autoplayHoverPause: false
+    });
+    } else {
+    document.querySelectorAll('.categoria-desktop').forEach(item => item.display = 'flex');
+    document.querySelectorAll('.categoria-Mobile1').forEach(item => item.display = 'none');
+    }
+    // CARROSSEL FOOTER
+    var carouselDelay = 1000;
+    
+    if (carouselDelay) {
+    setTimeout(function () {
+    document.querySelector('#fast_rotativo').style.display = 'block';
+    
+    $('#fast_rotativo').owlCarousel({
+    items: 1,
+    loop: true,
+    smartSpeed: 600,
+    responsiveClass: true,
+    nav: true,
+    navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+    responsive: { 0: { items: 3, margin: 0 }, 1100: { items: 4 } },
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true
+    });
+    }, carouselDelay);
+    }
+    
+</script>
